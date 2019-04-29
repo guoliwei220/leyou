@@ -4,10 +4,13 @@ spring:
   application:
     name: leyou-service
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/leyou
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/leyou?userUnicode=true&characterEncoding=utf8
     username: root
     password: root
-    driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 5MB #限制文件上传大小
 
 
 eureka:
@@ -17,3 +20,7 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+

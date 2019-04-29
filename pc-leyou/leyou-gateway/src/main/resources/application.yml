@@ -12,6 +12,10 @@ zuul:
   prefix: /api  #添加路由
   routes:
     leyou-service: /item/**
+    leyou-upload:
+      path: /upload/**
+      serviceId: leyou-upload
+      strip-prefix: false
 hystrix:
   command:
     default:
