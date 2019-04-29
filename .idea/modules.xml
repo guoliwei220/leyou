@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/leyou.iml" filepath="$PROJECT_DIR$/.idea/leyou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/leyou-gateway/leyou-gateway.iml" filepath="$PROJECT_DIR$/pc-leyou/leyou-gateway/leyou-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/leyou-item/leyou-interface/leyou-interface.iml" filepath="$PROJECT_DIR$/pc-leyou/leyou-item/leyou-interface/leyou-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/leyou-item/leyou-item.iml" filepath="$PROJECT_DIR$/pc-leyou/leyou-item/leyou-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leyou-manage-web/leyou-manage-web.iml" filepath="$PROJECT_DIR$/leyou-manage-web/leyou-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/leyou-register/leyou-register.iml" filepath="$PROJECT_DIR$/pc-leyou/leyou-register/leyou-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/leyou-item/leyou-service/leyou-service.iml" filepath="$PROJECT_DIR$/pc-leyou/leyou-item/leyou-service/leyou-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/leyou-upload/leyou-upload.iml" filepath="$PROJECT_DIR$/pc-leyou/leyou-upload/leyou-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pc-leyou/pc-leyou.iml" filepath="$PROJECT_DIR$/pc-leyou/pc-leyou.iml" />
+    </modules>
+  </component>
+</project>
