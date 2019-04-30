@@ -22,5 +22,6 @@ public class GoodsController {
                                                       ){
         return ResponseEntity.ok(goodsService.queryGoods(page,rows,saleable,key));
 
+
     }
 }
