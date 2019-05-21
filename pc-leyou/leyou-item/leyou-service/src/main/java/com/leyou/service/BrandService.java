@@ -63,4 +63,12 @@ public class BrandService {
         }
         return brand;
     }
+
+    public List<Brand> queryBrandByCid(Long cid) {
+        List<Brand> brandList = brandMapper.queryBrandByCid(cid);
+        if(brandList == null){
+            throw new RuntimeException("无此品牌");
+        }
+        return brandList;
+    }
 }

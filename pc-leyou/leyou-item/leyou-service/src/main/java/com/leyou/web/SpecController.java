@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("spec")
@@ -33,9 +32,19 @@ public class SpecController {
         specService.deleteSpecGroup(id);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+
+    /**
+     * 查询商品规格
+     * @param gid
+     * @param cid
+     * @param searching
+     * @return
+     */
     @GetMapping("params")
-    public ResponseEntity<List<SpecParam>> querySpecParam(@RequestParam("gid") Long gid){
-        return ResponseEntity.ok(specService.querySpecParam(gid));
+    public ResponseEntity<List<SpecParam>> querySpecParam(@RequestParam(value = "gid",required = false) Long gid,
+                                                          @RequestParam(value = "cid",required = false) Long cid,
+                                                          @RequestParam(value = "searching",required = false) Boolean searching){
+        return ResponseEntity.ok(specService.querySpecParam(gid,cid,searching));
     }
 
     @RequestMapping("param")

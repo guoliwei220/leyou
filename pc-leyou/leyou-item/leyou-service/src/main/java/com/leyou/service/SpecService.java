@@ -43,9 +43,11 @@ public class SpecService {
         specGroupMapper.delete(spec);
     }
 
-    public List<SpecParam> querySpecParam(Long gid) {
+    public List<SpecParam> querySpecParam(Long gid, Long cid, Boolean searching) {
         SpecParam specParam = new SpecParam();
         specParam.setGroupId(gid);
+        specParam.setCid(cid);
+        specParam.setSearching(searching);
         List<SpecParam> specParams = specParamMapper.select(specParam);
         if(CollectionUtils.isEmpty(specParams)){
             throw new RuntimeException("查询分组信息为空");
